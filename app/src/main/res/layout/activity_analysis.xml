@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Analysis">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cons_2"
+        android:orientation="horizontal" >
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/input_in"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_in_input"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="1"
+            android:singleLine="false"
+            android:text="投资占比:收入"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/input_in" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/cons_1"
+        app:layout_constraintBottom_toTopOf="@+id/cons_3"
+        android:orientation="horizontal" >
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/output_in"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_output_in"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="1"
+            android:singleLine="false"
+            android:text="产出占比"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/output_in" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/cons_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal" >
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/input_out"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_out_input"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="1"
+            android:singleLine="false"
+            android:text="投资占比:支出"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/input_out" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

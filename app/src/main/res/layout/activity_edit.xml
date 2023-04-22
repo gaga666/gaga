@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints"/>
+
+
+    <com.necer.view.WeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#666666"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.necer.calendar.Miui10Calendar
+        android:id="@+id/miui10Calendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:showNumberBackground="true"
+        app:solarTextBold="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#fff5f5f5"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <EditText
+                    android:id="@+id/edit_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:hint="title"
+                    android:background="@drawable/edit_backgroud"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_text"
+                    android:layout_width="match_parent"
+                    android:hint="text"
+                    android:gravity="center"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/edit_backgroud"/>
+
+                <EditText
+                    android:id="@+id/edit_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="date"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/edit_backgroud"/>
+
+
+                <Button
+                    android:id="@+id/edit_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="提交"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+    </com.necer.calendar.Miui10Calendar>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
